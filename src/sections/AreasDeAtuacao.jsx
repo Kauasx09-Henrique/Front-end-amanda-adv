@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './AreasDeAtuacao.css';
+import '../sections/AreasDeAtuacao.css';
 
 function AreasDeAtuacao() {
   const [isVisible, setIsVisible] = useState(false);
