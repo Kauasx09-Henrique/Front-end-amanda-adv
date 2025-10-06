@@ -1,0 +1,70 @@
+/* 1. Variáveis de Design (Nosso Tema) */
+:root {
+  /* Paleta de Cores */
+  --cor-primaria: #0A2342;
+  --cor-secundaria: #F8F9FA;
+  --cor-destaque: #B48A3C;
+  --cor-texto: #343A40;
+  --cor-branca: #FFFFFF;
+
+  /* Tipografia */
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-texto: 'Lato', sans-serif;
+}
+
+
+/* 2. Reset Básico e Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e border não alterem o tamanho final do elemento */
+}
+
+html {
+  scroll-behavior: smooth; /* Efeito de rolagem suave ao clicar nos links do menu */
+}
+
+body {
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  background-color: var(--cor-secundaria);
+  line-height: 1.6; /* Espaçamento entre linhas confortável para leitura */
+  -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 3. Estilos Padrão para Elementos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-primaria);
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem; /* Espaçamento padrão abaixo dos parágrafos */
+}
+
+a {
+  color: var(--cor-destaque);
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a37a30; /* Um tom um pouco mais escuro do dourado no hover */
+}
+
+
+/* 4. Estilos de Layout Padrão */
+section {
+  width: 100%;
+  padding: 80px 5%; /* Espaçamento padrão para todas as seções */
+}
+
+/* Um container para centralizar o conteúdo dentro das seções */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}

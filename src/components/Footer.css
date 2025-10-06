@@ -1,0 +1,276 @@
+:root {
+  /* Paleta de Cores */
+  --cor-primaria: #0A2342;
+  --cor-secundaria: #F8F9FA;
+  --cor-destaque: #B48A3C;
+  --cor-texto: #343A40;
+  --cor-branca: #FFFFFF;
+}
+
+.footer-container {
+  background: var(--cor-primaria);
+  color: var(--cor-branca);
+  padding: 3rem 0 1rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Seção Superior */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--cor-branca);
+  margin-bottom: 1rem;
+  font-family: var(--fonte-titulo);
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  color: var(--cor-destaque);
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--cor-destaque);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.footer-tagline {
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Links Rápidos */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.25rem 0;
+  display: block;
+}
+
+.footer-links a:hover {
+  color: var(--cor-destaque);
+  transform: translateX(5px);
+}
+
+/* Informações de Contato */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-icon {
+  font-size: 1rem;
+  margin-top: 0.1rem;
+}
+
+.contact-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--cor-destaque);
+}
+
+/* Redes Sociais */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.social-link:hover {
+  color: var(--cor-destaque);
+  background: rgba(180, 138, 60, 0.1);
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  font-size: 1.2rem;
+}
+
+.social-name {
+  font-size: 0.9rem;
+}
+
+/* Divisor */
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--cor-destaque),
+    transparent
+  );
+  margin: 2rem 0;
+}
+
+/* Seção Inferior */
+.footer-bottom {
+  padding-top: 1rem;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.legal-info p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.oab-info {
+  color: var(--cor-destaque) !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.footer-credits p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 2rem 0 1rem;
+  }
+
+  .footer-content {
+    padding: 0 1rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .social-link {
+    flex-direction: column;
+    text-align: center;
+    min-width: 60px;
+  }
+
+  .social-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top {
+    gap: 1rem;
+  }
+
+  .contact-info {
+    gap: 0.5rem;
+  }
+
+  .social-links {
+    justify-content: space-between;
+  }
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  .footer-links a,
+  .social-link,
+  .contact-item a {
+    transition: none;
+  }
+}
+
+.footer-links a:focus-visible,
+.social-link:focus-visible,
+.contact-item a:focus-visible {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Alto Contraste */
+@media (prefers-contrast: high) {
+  .footer-container {
+    background: #000;
+    border-top: 2px solid var(--cor-destaque);
+  }
+  
+  .footer-links a,
+  .contact-item,
+  .social-link {
+    font-weight: 600;
+  }
+}
