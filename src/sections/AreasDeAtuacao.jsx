@@ -101,7 +101,6 @@ function AreasDeAtuacao() {
       ]
     }
   ];
-
   return (
     <section
       id="atuacao"
