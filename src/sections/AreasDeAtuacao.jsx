@@ -107,7 +107,7 @@ function AreasDeAtuacao() {
       ref={sectionRef}
       className={`atuacao-section ${isVisible ? 'visible' : ''}`}
     >
-      {/* Elementos de fundo animados */}
+
       <div className="background-animation">
         <div className="floating-shape shape-1"></div>
         <div className="floating-shape shape-2"></div>
